@@ -18,3 +18,11 @@ function getDonationAmountById(id) {
     const amountNumber = parseFloat(amount);
     return amountNumber;
 }
+
+
+function date(){
+    const now = new Date();
+    const currentDateTime = now.toString();
+    return currentDateTime;;
+}
+
