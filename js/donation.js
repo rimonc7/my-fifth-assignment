@@ -17,11 +17,15 @@ document.getElementById('donation-primary-btn').addEventListener('click', functi
     coloredBgById('donation-primary-btn')
     const unHideAll = document.getElementById('donation-container');
     unHideAll.classList.remove('hidden')
+    const history = document.getElementById('history-container');
+    history.classList.add('hidden');
 })
 document.getElementById('history-btn').addEventListener('click', function () {
     coloredBgById('history-btn')
     const hideAll = document.getElementById('donation-container');
     hideAll.classList.add('hidden')
+    const history = document.getElementById('history-container');
+    history.classList.remove('hidden');
 })
 
 // button color end
@@ -119,7 +123,16 @@ document.getElementById('quota-donate-btn').addEventListener('click', function (
 })
 // Quota section end
 
-// history section
+// blog button section
+
+document.getElementById('blog-btn').addEventListener('click', function () {
+    window.location.href = './blog.html';
+})
+
+document.getElementById('blog-btn-mob').addEventListener('click', function () {
+    window.location.href = './blog.html';
+})
+
 
 
 

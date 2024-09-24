@@ -17,11 +17,11 @@
 </head>
 
 <body>
-    <header id="sticky-header" class="sticky top-0 z-50 transition-all duration-300">
+    <header id="sticky-header" class=" sticky top-0 z-50 transition-all duration-300">
         <section class=" bg-gray-50">
             <div class="navbar py-5">
                 <div class="navbar-start lg:mx-32">
-                    <a
+                    <a id="blog-btn"
                         class="btn hidden lg:flex text-black font-semibold hover:bg-transparent bg-[#B4F461] text-xl px-6">Blog</a>
                     <div class="dropdown lg:hidden">
                         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -34,7 +34,7 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <!-- mobile nav blog -->
-                            <a class="btn">Button</a>
+                            <a id="blog-btn-mob" class="btn text-black font-semibold hover:bg-transparent bg-[#B4F461] text-xl px-6">Blog</a>
                         </ul>
                     </div>
                 </div>
@@ -61,10 +61,10 @@
             <button id="history-btn" class="btn border border-gray-300 px-5 ">History</button>
         </section>
     </header>
-    <main>
+    <main >
         <section id="donation-container">
             <!-- Noakhali section start -->
-            <section class="pb-8">
+            <section class="pb-8 mt-32">
                 <div class="hero border border-[#1111111A] max-w-screen-lg mx-auto rounded-2xl">
                     <div class="hero-content flex-col lg:flex-row ">
                         <img src="assets/noakhali.png" class="max-w-sm rounded-lg h-[360px] w-[522px] object-cover" />
@@ -172,7 +172,7 @@
                 </div>
             </dialog>
         </section>
-        <section id="history-container" class=" space-y-5 max-w-screen-lg lg:mx-auto mb-5 mx-3">
+        <section id="history-container" class=" space-y-5 max-w-screen-lg lg:mx-auto mb-5 mx-3 hidden">
         </section>
     </main>
     <script src="js/donation.js"></script>

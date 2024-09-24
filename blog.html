@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8952c6182c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="sticky-header" class=" sticky top-0 z-50 transition-all duration-300">
+        <section class=" bg-gray-50">
+            <div class="navbar py-5">
+                <div class="navbar-start lg:mx-32">
+                    <a id="blog-btn"
+                        class="btn hidden lg:flex text-black font-semibold hover:bg-transparent bg-[#B4F461] text-xl px-6">Home</a>
+                    <div class="dropdown lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <!-- mobile nav Home -->
+                            <a
+                                class="btn text-black font-semibold hover:bg-transparent bg-[#B4F461] text-xl px-6">Home</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-center">
+                    <a
+                        class="btn btn-ghost text-xl text-black font-bold hover:bg-transparent flex flex-col lg:flex-row items-center">
+                        <img src="assets/logo.png" alt="logo" class="inline-block w-8 h-8 mb-1 lg:mb-0">
+                        <span class="text-center">
+                            <span class="block lg:inline">Donate</span>
+                            <span class="block lg:inline">Bangladesh</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="navbar-end gap-1 lg:gap-3 lg:mx-32">
+                    <img src="assets/coin.png" alt="">
+                    <p id="available-balance" class="text-gray-500 font-bold">55000</p>
+                    <p class="text-gray-500 font-bold">BDT</p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="ml-32 mt-32">
+        <h2 class="font-bold text-3xl ">Important FAQs <i class="fa-regular fa-circle-question"></i></h2>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">Focus me to see content</div>
+            <div class="collapse-content">
+                <p>tabindex="0" attribute is necessary to make the div focusable</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
